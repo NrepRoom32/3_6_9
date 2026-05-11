@@ -52,7 +52,7 @@ const RANK_DATA = {
 const CARD_BACK = 'images/001.jpeg';
 
 // Visible cards in arena = up to 5 simultaneously
-const MAX_VISIBLE = 5;
+const MAX_VISIBLE = 10;
 
 // ---------- STATE ----------
 let deck = [];          // remaining cards (not yet drawn)
@@ -132,9 +132,9 @@ function getArenaSize() {
 }
 function getOrbitRadii() {
   const { w, h } = getArenaSize();
-  // wide horizontal circle — much wider than tall, like a tilted ring
-  const rx = Math.min(w * 0.42, 280);
-  const ry = Math.min(h * 0.13, 95);
+  // wide horizontal circle — large enough for up to 10 cards, but keeps them on screen
+  const rx = Math.min(w * 0.38, 270);
+  const ry = Math.min(h * 0.18, 130);
   return { rx, ry };
 }
 
