@@ -4,7 +4,7 @@
    even with no internet connection afterwards.
    ==================================================== */
 
-const CACHE_NAME = 'card-game-v1';
+const CACHE_NAME = 'card-game-v2';
 
 // Files to cache for offline use
 const ASSETS = [
