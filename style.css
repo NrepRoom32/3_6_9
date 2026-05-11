@@ -22,8 +22,8 @@ html, body {
   --bg2: #d4f1ff;
   --bg3: #e6d6ff;
   --ink: #2d1f4d;
-  --card-w: 110px;
-  --card-h: 160px;
+  --card-w: 90px;
+  --card-h: 132px;
   --speed: 18s;
 }
 
@@ -577,10 +577,11 @@ body {
 }
 
 .card-character {
-  width: 88%;
+  width: 78%;
+  aspect-ratio: 3 / 4;
   flex: 0 1 auto;
   min-height: 0;
-  max-height: 58%;
+  max-height: 62%;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.18);
@@ -653,7 +654,7 @@ body {
 
 /* ============= RESPONSIVE ============= */
 @media (max-width: 480px) {
-  :root { --card-w: 88px; --card-h: 128px; }
+  :root { --card-w: 76px; --card-h: 112px; }
   .game-title { font-size: 38px; }
   .hero-img-wrap { width: 240px; height: 320px; max-height: 44vh; }
   .start-btn { font-size: 18px; padding: 14px 38px; }
@@ -669,7 +670,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  :root { --card-w: 130px; --card-h: 190px; }
+  :root { --card-w: 110px; --card-h: 160px; }
   .flipper { width: 340px; height: 500px; }
   .card-corner { font-size: 44px; }
   .card-corner .suit { font-size: 34px; }
